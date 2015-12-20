@@ -2,10 +2,10 @@
 
 Introduction
 ============
-.. image:: img/PocketMine.png
+.. image:: http://i.imgur.com/dPwr1cT.jpg
 	:align: center
 
-PocketMine-MP is a server software for Minecraft PE (Pocket Edition).
+ImagicalMine is a server software for Minecraft PE (Pocket Edition).
 It has a :doc:`Plugin API <plugins>` that enables a :doc:`developer <developers>` to extend it and add new features, or change default ones.
 
 Supported features
