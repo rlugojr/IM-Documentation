@@ -1,8 +1,8 @@
 Plugins
 =======
-**PocketMine is extendable!**
+**ImagicalMine is extendable!**
 
-Plugins are available on the `PocketMine website <http://forums.pocketmine.net/plugins/>`_ or you can make your own plugin.
+Plugins are available on the `ImagicalMine website <http://forums.imagicalcorp.ml/resources/>`_ or you can make your own plugin.
 
 Below is an skeleton with the minimal needed directories, files and content.
 
@@ -22,7 +22,7 @@ Make sure your base structure looks like this
 
 .. code-block:: sh
 
-	PocketMine-MP
+	ImagicalMine
 	└── plugins
 	    └── Example
     	        ├── plugin.yml
@@ -34,7 +34,7 @@ Make sure your base structure looks like this
 
 plugin.yml
 ++++++++++
-This file is required in a plugin. It contains the information used by PocketMine-MP to load this plugin. It's in YAML format (you will use this format for plugin configurations). It has four required fields: name, version, api and main. Each one of these fields (and all the optional ones) are described on the plugin.yml page. Be sure that it is named exactly plugin.yml.
+This file is required in a plugin. It contains the information used by ImagicalMine to load this plugin. It's in YAML format (you will use this format for plugin configurations). It has four required fields: name, version, api and main. Each one of these fields (and all the optional ones) are described on the plugin.yml page. Be sure that it is named exactly plugin.yml.
 
 ======= ====================================================================================
 field   data
@@ -42,7 +42,7 @@ field   data
 name    The name for your plugin
 main    The namespace and classname pointing to your main plugin class. It is case sensitive
 version The version string of your plugin
-api     Minimal PocketMine-MP API version required for your plugin (`current <https://github.com/PocketMine/PocketMine-MP/search?utf8=✓&q=filename%3APocketMine.php+%22const+API_VERSION%22&type=Code>`_)
+api     Minimal PocketMine-MP API version required for your plugin (`current <https://github.com/ImagicalCorp/ImagicalMine/search?utf8=✓&q=filename%3APocketMine.php+%22const+API_VERSION%22&type=Code>`_)
 ======= ====================================================================================
 
 .. code-block:: yaml
@@ -85,7 +85,7 @@ Create .phar files
 The easiest way to release a plugin is in .phar format.
 To create a .phar you need `DevTools <http://jenkins.pocketmine.net/job/DevTools%20Plugin/>`_.
 
-1. Start PocketMine-MP
+1. Start ImagicalMine
 2. Make sure the plugin is loaded. Look for ``Loading source plugin <plugin name>``
 3. Run ``makeplugin <plugin name>``
 
@@ -101,7 +101,7 @@ The ``<plugin name>`` should be the same as the name in plugin.yml.
   makeplugin Example
   [Server thread/INFO]: [DevTools] Adding plugin.yml
   [Server thread/INFO]: [DevTools] Adding src/Example/Example.php
-  [Server thread/INFO]: Phar plugin Example v1.0.0 has been created on /Pocketmine-MP/dev/plugins/DevTools//Example_v1.0.0.phar
+  [Server thread/INFO]: Phar plugin Example v1.0.0 has been created on /ImagicalMine/dev/plugins/DevTools//Example_v1.0.0.phar
 
 More examples
 -------------
@@ -110,11 +110,3 @@ More examples
     :glob:
 
     pluginexamples/*
-
-
-Resources
----------
-
-* `PocketMine-MP Stable API Documentation <http://docs.pocketmine.net/>`_
-* `PocketMine-MP Development API Documentation <http://jenkins.pocketmine.net/job/PocketMine-MP-doc/doxygen/>`_
-* `Plugin Development forum <https://forums.pocketmine.net/forums/development/>`_
