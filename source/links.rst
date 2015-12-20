@@ -1,16 +1,12 @@
 Links
 -----
 
-PocketMine-MP
+ImagicalMine
 ~~~~~~~~~~~~~
 
-* `PocketMine Website <https://www.pocketmine.net>`_
-* `PocketMine Forums <https://forums.pocketmine.net/>`_
-* `PocketMine Jenkins <http://jenkins.pocketmine.net/>`_
-* `PocketMine GitHub <https://www.github.com/PocketMine/>`_
-* `PocketMine-MP GitHub <https://github.com/PocketMine/PocketMine-MP>`_
-* `PocketMine-MP Translation <http://translate.pocketmine.net/>`_
-* `PocketMine-MP Documentation <http://pocketmine-mp.readthedocs.org/en/latest/>`_
-* `PocketMine-MP Stable API Documentation <http://docs.pocketmine.net/>`_
-* `PocketMine-MP Development API Documentation <http://jenkins.pocketmine.net/job/PocketMine-MP-doc/doxygen/>`_
-* `PocketMine PHP Binaries <https://bintray.com/pocketmine/PocketMine/>`_
+* `ImagicalMine Website <https://www.imagicalmine.imagicalcorp.ml>`_
+* `ImagicalMine Forums <https://forums.imagicalcorp.ml/>`_
+* `ImagicalMine Jenkins <http://jenkins.imagicalcorp.ml:8080/>`_
+* `Imagical Corporation GitHub <https://www.github.com/ImagicalCorp/>`_
+* `ImagicalMine GitHub <https://github.com/ImagicalCorp/ImagicalMine>`_
+* `ImagicalMine Documentation <http://imagicalmine.readthedocs.org/en/latest/>`_
