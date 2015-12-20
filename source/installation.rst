@@ -240,7 +240,7 @@ The server should have started now and you should be able to join.
 Installing ImagicalMine
 -----------------------
 
-1. Download the latest phar from `Jenkins`_.
+1. Download the latest phar from `ImagicalMine-Jenkins`_.
 2. Rename the .phar to ``PocketMine-MP.phar``.
 3. Place it in the ImagicalMine directory.
 4. Delete the server.properties file. ImagicalMine will create one again with the default values on startup.
@@ -248,7 +248,7 @@ Installing ImagicalMine
 
 .. _Win-Bintray: https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view#files
 .. _GitHub: https://github.com/ImagicalCorp/ImagicalMine/releases
-.. _Jenkins: http://jenkins.imagicalcorp.ml:8080/job/ImagicalMine
+.. _Jenkins: http://jenkins.pocketmine.net/job/PocketMine-MP
 .. _PHP-Bintray: https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files
 .. _PHP-Jenkins: http://jenkins.pocketmine.net/
 .. _PM-Stable: https://github.com/PocketMine/PocketMine-MP/releases
@@ -256,3 +256,4 @@ Installing ImagicalMine
 .. _PocketMine-MP for Android: https://play.google.com/store/apps/details?id=net.pocketmine.server
 .. _Crowdin: http://translate.pocketmine.net
 .. _License: https://github.com/ImagicalCorp/ImagicalMine/blob/master/LICENSE
+.. _ImagicalMine-Jenkins: http://jenkins.imagicalcorp.ml:8080/job/ImagicalMine
