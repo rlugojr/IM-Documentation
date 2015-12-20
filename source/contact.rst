@@ -1,13 +1,9 @@
 Contact and Support
 -------------------
 
-* `PocketMine Forums`_
-* `@PocketMine`_ on twitter
-* `#pocketmine`_ for support @ chat.freenode.net
-* `#mcpedevs`_ for MCPE development @ chat.freenode.net
+* `Imagical Corporation Forums`_
+* `@ImagicalTeam`_ on twitter
 
 
-.. _PocketMine Forums: http://forums.pocketmine.net
-.. _#pocketmine: http://webchat.freenode.net/?channels=pocketmine&uio=d4
-.. _#mcpedevs: http://webchat.freenode.net/?channels=mcpedevs&uio=d4
-.. _@PocketMine: https://twitter.com/PocketMine
+.. _Imagical Corporation Forums: http://forums.imagicalcorp.ml
+.. _@ImagicalTeam: https://twitter.com/ImagicalTeam
