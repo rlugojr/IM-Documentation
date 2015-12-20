@@ -1,7 +1,7 @@
-.. image:: img/PocketMine.png
+.. image:: http://i.imgur.com/dPwr1cT.jpg
    :align: center
 
-PocketMine Documentation
+ImagicalMine Documentation
 ========================
 
 .. toctree::
