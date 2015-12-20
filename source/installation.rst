@@ -3,13 +3,15 @@
 Installation
 ============
 
+In order to install ImagicalMine, you must install PocketMine first. Follow the instructions below to install PocketMine, then ImagicalMine.
+
 Installing on Windows
 ---------------------
 
-Download the latest version from `Bintray <Win-Bintray_>`_.
+Download the latest version from `PocketMine`_.
 Use the installer to install PocketMine-MP.
-The installer may have an outdated version of PocketMine-MP.
-You can download the latest .phar from `GitHub`_ or `Jenkins`_.
+The installer may have an outdated version of ImagicalMine.
+You can download the latest .phar from `Jenkins`_.
 
 .. warning::
     If the provided x64 binary does not work then try the x86 binary.
@@ -17,7 +19,7 @@ You can download the latest .phar from `GitHub`_ or `Jenkins`_.
 Installing on Linux/MacOS
 -------------------------
 
-Use one of the following urls with ``curl`` or ``wget`` to install PocketMine-MP.
+Use one of the following urls with ``curl`` or ``wget`` to install PocketMine first.
 
 .. code-block:: sh
 
@@ -56,13 +58,13 @@ Install `PocketMine-MP for Android`_ from the Google play.
 Installing manually
 -------------------
 
-Did the installer fail? It is not your taste? YOLO? DIY!
+Did the installer fail? It is not your taste? DIY!
 
 Using .phar
 ~~~~~~~~~~~
 
-1. Create a new directory for PocketMine-MP.
-2. Download PocketMine-MP.phar from `GitHub`_ or `Jenkins`_.
+1. Create a new directory for PocketMine.
+2. Download PocketMine-MP.phar from `Jenkins`_.
 3. Rename the .phar to ``PocketMine-MP.phar``.
 4. Place it in the PocketMine-MP directory you just created.
 
@@ -131,7 +133,7 @@ Getting PHP and the start script
 Starting for the first time
 ---------------------------
 
-Now you should be able to start PocketMine-MP.
+Now you should be able to start PocketMine.
 The first time it starts with a set-up wizard,
 this can be disabled by running ``./start.sh --no-wizard``.
 
@@ -210,7 +212,7 @@ You can skip the wizard from here and start the server with the default settings
     [*] RCON is a protocol to remote connect with the server console using a password.
     [?] Do you want to enable RCON? (y/N):
     [*] Getting your external IP and internal IP
-    [!] Your external IP is 87.212.35.149. You may have to port-forward to your internal IP 192.168.0.150
+    [!] Your external IP is x.x.x.x. You may have to port-forward to your internal IP x.x.x.x.
     [!] Be sure to check it, if you have to forward and you skip that, no external players will be able to join. [Press Enter]
     [*] You have finished the set-up wizard correctly
     [*] Check the Plugin Repository to add new features, minigames, or advanced protection to your server
@@ -235,14 +237,22 @@ You can skip the wizard from here and start the server with the default settings
 
 The server should have started now and you should be able to join.
 
+Installing ImagicalMine
+-----------------------
+
+1. Download the latest phar from `Jenkins`_.
+2. Rename the .phar to ``PocketMine-MP.phar``.
+3. Place it in the ImagicalMine directory.
+4. Delete the server.properties file. ImagicalMine will create one again with the default values on startup.
+
 
 .. _Win-Bintray: https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view#files
-.. _GitHub: https://github.com/PocketMine/PocketMine-MP/releases
-.. _Jenkins: http://jenkins.pocketmine.net/job/PocketMine-MP/promotion/
+.. _GitHub: https://github.com/ImagicalCorp/ImagicalMine/releases
+.. _Jenkins: http://jenkins.imagicalcorp.ml:8080/job/ImagicalMine
 .. _PHP-Bintray: https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files
 .. _PHP-Jenkins: http://jenkins.pocketmine.net/
 .. _PM-Stable: https://github.com/PocketMine/PocketMine-MP/releases
 .. _PM-Dev: http://jenkins.pocketmine.net/job/PocketMine-MP/
 .. _PocketMine-MP for Android: https://play.google.com/store/apps/details?id=net.pocketmine.server
 .. _Crowdin: http://translate.pocketmine.net
-.. _License: https://github.com/PocketMine/PocketMine-MP/blob/master/LICENSE
+.. _License: https://github.com/ImagicalCorp/ImagicalMine/blob/master/LICENSE
