@@ -3,25 +3,23 @@ How to use git
 
 Clone PocketMine-MP
 ^^^^^^^^^^^^^^^^^^^
-Get the clone URL from `PocketMine/PocketMine-MP <https://github.com/PocketMine/PocketMine-MP>`_
+Get the clone URL from `ImagicalCorp/ImagicalMine <https://github.com/ImagicalCorp/ImagicalMine>`_
 
 .. code-block:: sh
 
-	$ git clone git@github.com:PocketMine/PocketMine-MP.git PocketMine-MP.git  # clone the original repository into PocketMine-MP.git
-	$ cd PocketMine-MP.git  # change directory to PocketMine-MP.git
+	$ git clone git@github.com:ImagicalCorp/ImagicalMine.git ImagicalMine.git  # clone the original repository into ImagicalMine.git
+	$ cd ImagicalMine.git  # change directory to ImagicalMine.git
 
 
 How to make a pull request
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-Go to the `PocketMine/PocketMine-MP <https://github.com/PocketMine/PocketMine-MP>`_ repository and hit the **Fork** button. You should now have a forked repo from **PocketMine/PocketMine-MP** in your own repositories.
-
-.. image:: img/git-fork.png
+Go to the `ImagicalCorp/ImagicalMine <https://github.com/ImagicalCorp/ImagicalMine>`_ repository and hit the **Fork** button. You should now have a forked repo from **ImagicalCorp/ImagicalMine** in your own repositories.
 
 Get the clone URL from the fork and clone it into another directory:
 
 .. code-block:: sh
 
-	$ git clone git clone <YOUR SSH/HTTPS clone URL> PocketMine-MP-Fork.git  # clone the original repository into PocketMine-MP-Fork.git
+	$ git clone git clone <YOUR SSH/HTTPS clone URL> ImagicalMine-Fork.git  # clone the original repository into ImagicalMine-Fork.git
 	$ git checkout -b feature  # create and switch to branch feature (it can be any name)
 	$ git branch # shows current branch
 	* feature  # current branch
@@ -43,7 +41,7 @@ Take a look at GitHub and make a pull request. If the pull request is accepted a
 
 .. note::
 	To pull from the original repository you need to add the upstream
-	``$ git remote add upstream git@github.com:PocketMine/PocketMine-MP.git``
+	``$ git remote add upstream git@github.com:ImagicalCorp/ImagicalMine.git``
 
 .. code-block:: sh
 
