@@ -23,7 +23,7 @@ Download the PHP binary for your OS:
 * `Android <PHP-Bintray_>`_ or `Jenkins <PHP-Jenkins_>`_
 * `Raspbian <PHP-Bintray_>`_
 
-Update PocketMine-MP
+Update ImagicalMine
 ++++++++++++++++++++
 
 * Download the .phar matching your MCPE version from :ref:`here <supportedMCPEversions>`.
@@ -36,6 +36,5 @@ Update PocketMine-MP
 
 .. _Win-Bintray: https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view#files
 .. _PHP-Bintray: https://bintray.com/pocketmine/PocketMine/Unix-PHP-Binaries/view#files
-.. _PHP-Jenkins: http://jenkins.pocketmine.net/
-.. _PM-Stable: https://github.com/PocketMine/PocketMine-MP/releases
-.. _PM-Dev: http://jenkins.pocketmine.net/job/PocketMine-MP/
+.. _PHP-Jenkins: http://jenkins.imagicalcorp.ml:8080/
+.. _PM-Dev: http://jenkins.imagicalmine.ml:8080/job/ImagicalMine/
