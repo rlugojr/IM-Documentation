@@ -3,10 +3,10 @@
 Installation
 ============
 
-In order to install ImagicalMine, you must install PocketMine first. Follow the instructions below to install PocketMine, then ImagicalMine.
-
 Installing on Windows
 ---------------------
+
+You need to install PocketMine first before installing ImagicalMine on Windows. Follow the instructions below to install PocketMine and ImagicalMine.
 
 Download the latest version from `PocketMine`_.
 Use the installer to install PocketMine-MP.
@@ -19,30 +19,23 @@ You can download the latest .phar from `Jenkins`_.
 Installing on Linux/MacOS
 -------------------------
 
-Use one of the following urls with ``curl`` or ``wget`` to install PocketMine first.
+Use one of the following urls depending on which "bit" operating system you have with ``curl`` or ``wget`` to install ImagicalMine directly.
 
 .. code-block:: sh
 
-	https://get.pocketmine.net/
-	https://raw.githubusercontent.com/PocketMine/php-build-scripts/master/installer.sh
+	http://get.imagicalmine.ml/Linux32.sh
+        http://get.imagicalmine.ml/Linux64.sh
 
-Replace ``<URL>`` with one from above and ``<VERSION>`` with ``stable``, ``beta``, ``development``.
-
-.. code-block:: sh
-
-	curl -sL <URL> | bash -s - -v <VERSION>
-	wget -q -O - <URL> | bash -s - -v <VERSION>
+Replace ``<URL>`` with one from above.
 
 .. code-block:: sh
 
-  [*] Found PocketMine-MP Final_1.5dev (build 1254) using API 1.12.0
-  [*] This development build was released on Sat Jun 20 09:45:04 CEST 2015
-  [*] Installing/updating PocketMine-MP on directory ./
-  [1/3] Cleaning...
-  [2/3] Downloading PocketMine-MP Final_1.5dev-1254 phar... done!
-  [3/3] Obtaining PHP: detecting if build is available...
-  [3/3] MacOS 64-bit PHP build available, downloading PHP_5.6.10_x86-64_MacOS.tar.gz... checking... regenerating php.ini... done
-  [*] Everything done! Run ./start.sh to start PocketMine-MP
+	curl -O <URL>
+	wget <URL>
+
+.. code-block:: sh
+
+  ImagicalMine installation finished. Run ./start.sh to start ImagicalMine.
 
 .. error::
 
@@ -55,92 +48,17 @@ Installing on Android
 
 Install `PocketMine-MP for Android`_ from the Google play.
 
-Installing manually
--------------------
-
-Did the installer fail? It is not your taste? DIY!
-
-Using .phar
-~~~~~~~~~~~
-
-1. Create a new directory for PocketMine.
-2. Download PocketMine-MP.phar from `Jenkins`_.
-3. Rename the .phar to ``PocketMine-MP.phar``.
-4. Place it in the PocketMine-MP directory you just created.
-
-Using GitHub
-~~~~~~~~~~~~
-
-.. code::
-
-    $ git clone --recursive https://github.com/PocketMine/PocketMine-MP.git PocketMine-MP.git
-    Cloning into 'PocketMine-MP.git'...
-    remote: Counting objects: 34068, done.
-    remote: Compressing objects: 100% (13/13), done.
-    remote: Total 34068 (delta 2), reused 0 (delta 0), pack-reused 34055
-    Receiving objects: 100% (34068/34068), 9.89 MiB | 1.79 MiB/s, done.
-    Resolving deltas: 100% (25602/25602), done.
-    Checking connectivity... done.
-    Submodule 'src/pocketmine/gui' (https://github.com/PocketMine/PocketMine-MP-GUI.git) registered for path 'src/pocketmine/gui'
-    Submodule 'src/raklib' (https://github.com/PocketMine/RakLib.git) registered for path 'src/raklib'
-    Submodule 'src/spl' (https://github.com/PocketMine/PocketMine-SPL.git) registered for path 'src/spl'
-    Submodule 'tests/TesterPlugin' (https://github.com/PocketMine/TesterPlugin.git) registered for path 'tests/TesterPlugin'
-    Cloning into 'src/pocketmine/gui'...
-    remote: Counting objects: 26, done.
-    remote: Compressing objects: 100% (21/21), done.
-    remote: Total 26 (delta 4), reused 26 (delta 4), pack-reused 0
-    Unpacking objects: 100% (26/26), done.
-    Checking connectivity... done.
-    Submodule path 'src/pocketmine/gui': checked out 'b551c3d58ec2fd9fa0f3c92d36fcbaa5c70467f7'
-    Cloning into 'src/raklib'...
-    remote: Counting objects: 577, done.
-    remote: Total 577 (delta 0), reused 0 (delta 0), pack-reused 577
-    Receiving objects: 100% (577/577), 141.29 KiB | 0 bytes/s, done.
-    Resolving deltas: 100% (432/432), done.
-    Checking connectivity... done.
-    Submodule path 'src/raklib': checked out '660bdff07d85c0270e57da2a5ce69eff2a87649a'
-    Cloning into 'src/spl'...
-    remote: Counting objects: 65, done.
-    remote: Total 65 (delta 0), reused 0 (delta 0), pack-reused 65
-    Unpacking objects: 100% (65/65), done.
-    Checking connectivity... done.
-    Submodule path 'src/spl': checked out '178d2a38f95d552fa5d91da26edc13a86d8054c6'
-    Cloning into 'tests/TesterPlugin'...
-    remote: Counting objects: 8, done.
-    remote: Compressing objects: 100% (2/2), done.
-    remote: Total 8 (delta 2), reused 1 (delta 1), pack-reused 5
-    Unpacking objects: 100% (8/8), done.
-    Checking connectivity... done.
-    Submodule path 'tests/TesterPlugin': checked out '1a0dec97cc354a0b62b41c007caa6f84885b8263'
-
-Getting PHP and the start script
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1. Downlad your flavor PHP binary.
-
-   * Windows `Bintray <Bintray_>`_
-   * MacOS `Bintray <PHP-Bintray_>`_
-   * CentOS `Bintray <PHP-Bintray_>`_
-   * Linux `Bintray <PHP-Bintray_>`_ or `Jenkins <PHP-Jenkins_>`_
-   * Linux ARM `Bintray <PHP-Bintray_>`_ or `Jenkins <PHP-Jenkins_>`_
-   * Android `Bintray <PHP-Bintray_>`_ or `Jenkins <PHP-Jenkins_>`_
-   * Raspbian `Bintray <PHP-Bintray_>`_
-
-2. Extract the PHP binary
-3. Download the `start.sh <https://raw.githubusercontent.com/PocketMine/PocketMine-MP/master/start.sh>`_
-4. Make start.sh executable (chmod +x start.sh)
-
 Starting for the first time
 ---------------------------
 
-Now you should be able to start PocketMine.
+Now you should be able to start ImagicalMine.
 The first time it starts with a set-up wizard,
 this can be disabled by running ``./start.sh --no-wizard``.
 
 .. code::
 
     $ ./start.sh
-    [*] PocketMine-MP set-up wizard
+    [*] ImagicalMine set-up wizard
     [*] Please select a language:
     English => en
     EspaÃ±ol => es
@@ -159,16 +77,16 @@ this can be disabled by running ``./start.sh --no-wizard``.
     TÃ¼rkÃ§e => tr
     [?] Language (en):
 
-PocketMine-MP supports a few other languages.
+ImagicalMine supports a few other languages.
 Fill in the two letters behind the language and press enter.
 Is your language not in the list? Add it on `Crowdin`_.
 
 .. code::
 
     [*] English has been correctly selected.
-    Welcome to PocketMine-MP!
+    Welcome to ImagicalMine!
     Before starting setting up your new server you have to accept the license.
-    PocketMine-MP is licensed under the LGPL License,
+    ImagicalMine is licensed under the LGPL License,
     that you can read opening the LICENSE file on this folder.
 
     This program is free software: you can redistribute it and/or modify
@@ -194,7 +112,7 @@ You can skip the wizard from here and start the server with the default settings
     [?] Give a name to your server (Minecraft: PE Server):
     [*] Do not change the default port value if this is your first server.
     [?] Server port (19132):
-    [*] The RAM is the maximum amount of memory PocketMine-MP will use. A value of 128-256 MB is recommended
+    [*] The RAM is the maximum amount of memory ImagicalMine will use. A value of 128-256 MB is recommended
     [?] Server RAM in MB (256):
     [*] Choose between Creative (1) or Survival (0)
     [?] Default Game mode: (0):
@@ -216,9 +134,9 @@ You can skip the wizard from here and start the server with the default settings
     [!] Be sure to check it, if you have to forward and you skip that, no external players will be able to join. [Press Enter]
     [*] You have finished the set-up wizard correctly
     [*] Check the Plugin Repository to add new features, minigames, or advanced protection to your server
-    [*] PocketMine-MP will now start. Type /help to view the list of available commands.
+    [*] ImagicalMine will now start. Type /help to view the list of available commands.
 
-    [Server thread/INFO]: Loading pocketmine.yml...
+    [Server thread/INFO]: Loading imagicalmine.yml...
     [Server thread/INFO]: Loading server properties...
     [Server thread/INFO]: Selected English (eng) as the base language
     [Server thread/INFO]: Starting Minecraft: PE server version v0.11.0 alpha
@@ -226,8 +144,8 @@ You can skip the wizard from here and start the server with the default settings
     [Server thread/NOTICE]: There are new memory settings on pocketmine.yml to tune memory and events.
     [Server thread/NOTICE]: You can also reduce the amount of threads and chunks loaded control the memory usage.
     [Server thread/INFO]: Opening server on 0.0.0.0:19132
-    [Server thread/INFO]: This server is running PocketMine-MP version 1.5dev-1254 "活発(Kappatsu)フグ(Fugu)" (API 1.12.0)
-    [Server thread/INFO]: PocketMine-MP is distributed under the LGPL License
+    [Server thread/INFO]: This server is running ImagicalMine version 1.0dev「[ImagicalMine]」(API 1.13.0)
+    [Server thread/INFO]: ImagicalMine is distributed under the LGPL License
     [Server thread/INFO]: Preparing level "world"
     [Server thread/INFO]: Starting GS4 status listener
     [Server thread/INFO]: Setting query port to 19132
@@ -236,15 +154,6 @@ You can skip the wizard from here and start the server with the default settings
     [Server thread/INFO]: Done (19.485s)! For help, type "help" or "?"
 
 The server should have started now and you should be able to join.
-
-Installing ImagicalMine
------------------------
-
-1. Download the latest phar from `ImagicalMine-Jenkins`_.
-2. Rename the .phar to ``PocketMine-MP.phar``.
-3. Place it in the ImagicalMine directory.
-4. Delete the server.properties file. ImagicalMine will create one again with the default values on startup.
-
 
 .. _Win-Bintray: https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view#files
 .. _GitHub: https://github.com/ImagicalCorp/ImagicalMine/releases
