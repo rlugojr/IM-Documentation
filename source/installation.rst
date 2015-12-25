@@ -23,25 +23,22 @@ Use one of the following urls depending on which "bit" operating system you have
 
 .. code-block:: sh
 
-	http://get.imagicalmine.ml/Linux32.sh
-        http://get.imagicalmine.ml/Linux64.sh
+	http://get.imagicalcorp.ml/Linux32
+        http://get.imagicalcorp.ml/Linux64
+        http://get.imagicalcorp.ml/Mac32
+        http://get.imagicalcorp.ml/Mac64
 
 Replace ``<URL>`` with one from above.
 
 .. code-block:: sh
 
-	curl -O <URL>
-	wget <URL>
+	curl -sL <URL> | bash
+	wget -q -O - <URL> | bash
 
 .. code-block:: sh
 
   ImagicalMine installation finished. Run ./start.sh to start ImagicalMine.
 
-.. error::
-
-    It is recommended to run it as a **normal user** as it doesn't need further permissions.
-
-    **Do not run the installer as root, this is discouraged**.
 
 Installing on Android
 ---------------------
@@ -155,6 +152,7 @@ You can skip the wizard from here and start the server with the default settings
 
 The server should have started now and you should be able to join.
 
+.. _PocketMine: https://pocketmine.net
 .. _Win-Bintray: https://bintray.com/pocketmine/PocketMine/Windows-PHP-Binaries/view#files
 .. _GitHub: https://github.com/ImagicalCorp/ImagicalMine/releases
 .. _Jenkins: http://jenkins.pocketmine.net/job/PocketMine-MP
